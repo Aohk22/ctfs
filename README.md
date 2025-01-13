@@ -1,2 +1,2 @@
 # ctfs
-Ctf solutions
+Ctf solutions (noobs)
