@@ -17,6 +17,6 @@ https://attack.mitre.org/software/S0366/
 9. Microsoft patch ID: MS17-010
 
 Source: ChatGPT<br>
-![Pasted image 20250113133531.png](images/Pasted%20image%2020250113133531.png)<br>
+![Pasted image 20250113133531.png](Pasted%20image%2020250113133531.png)<br>
 
 `grodno{9bc3f01a1d3d373b95f08538ef3ca1}`
