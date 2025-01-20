@@ -12,7 +12,7 @@ There is a sqlite3 database file with 1 table and no data.
 Webapp uses flask **Flask version 3.1.0** (in requirements.txt file).
 ## Source analysis
 
-`users` table schema:
+`users` table schema:  
 ![Pasted image 20250119144926.png](images/Pasted%20image%2020250119144926.png)  
 Code also seems to be safe from SQLI.  
 ### Register function
