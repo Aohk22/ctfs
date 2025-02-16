@@ -139,6 +139,7 @@ All scripts names: BruteForce-to-KeePass, keepass-dump-masterkey, keepass-passwo
 
 ```  
 Master PID: 2296  
+Using the Yara scan method I found here: https://www.eyehatemalwares.com/digital-forensics/blog-df/browser-history/  
 It seems the guy accessed https://home.unicode.org/,  
 fonts is something about koi8-u-html? More stuff:  
 `https://www.google.com/search?q=bi0s&rlz=1C1CHBD_enIN879&oq=bi0s.in&aqs=chrome.6.69i58j69i57j0l5j69i60&sourceid=chrome&ie=UTF-8.8`  
