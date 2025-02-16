@@ -62,6 +62,8 @@ Alissa Simpson:1003:aad3b435b51404eeaad3b435b51404ee:f4ff64c8baac57d22f22edc6810
 Enter the NTLM hash and we get flag  
 ![500](img/Pasted%20image%2020250215192402.png)  
 
+Putting in cyberchef returned the flag.
+
 `flag{w3ll_3rd_stag_was_easy}`
 
 Part 1, 2 not solved yet.  
