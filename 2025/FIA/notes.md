@@ -6,19 +6,19 @@
 
 Used volatility 2.6 to solve.  
 `imageinfo` to get dump profile:  
-![Pasted image 20250215151130.png](img/Pasted%20image%2020250215151130.png)  
+![Pasted image 20250215151130.png](Pasted%20image%2020250215151130.png)  
 First one works.  
 
 `pstree` returned this:  
-![Pasted image 20250215151309.png](img/Pasted%20image%2020250215151309.png)  
+![Pasted image 20250215151309.png](Pasted%20image%2020250215151309.png)  
 
 `procdump` to get executable:  
-![Pasted image 20250215151820.png](img/Pasted%20image%2020250215151820.png)  
+![Pasted image 20250215151820.png](Pasted%20image%2020250215151820.png)  
 Running executable (yes on host machine :D):  
-![Pasted image 20250215151924.png](img/Pasted%20image%2020250215151924.png)  
+![Pasted image 20250215151924.png](Pasted%20image%2020250215151924.png)  
 
 `envars` to check environment variables of Flag.exe:  
-![Pasted image 20250215152125.png](img/Pasted%20image%2020250215152125.png)  
+![Pasted image 20250215152125.png](Pasted%20image%2020250215152125.png)  
 
 `FIA{V0lat1l1ty_1s_3ssential_f0r_m3m_4nalyse}`
 
@@ -30,21 +30,21 @@ Theo những gì mình nhớ thì có một cửa sổ màu đen 
 Khi xảy ra sự cố, tôi nhớ step bro mình đang vẽ một cái gì đấy.  
 
 `imageinfo`:  
-![Pasted image 20250215193939.png](img/Pasted%20image%2020250215193939.png)
+![Pasted image 20250215193939.png](Pasted%20image%2020250215193939.png)
 
 `pstree`:  
-![Pasted image 20250215194208.png](img/Pasted%20image%2020250215194208.png)
+![Pasted image 20250215194208.png](Pasted%20image%2020250215194208.png)
 
 First inspection of `memdump` of mspaint.exe didn't return anything (or maybe I just didn't see). Inspection was done by opening .dump file as raw image data in Gimp:  
 (I found this method credit to https://w00tsec.blogspot.com/2015/02/extracting-raw-pictures-from-memory.html)  
-![Pasted image 20250215185836.png](img/Pasted%20image%2020250215185836.png)    
+![Pasted image 20250215185836.png](Pasted%20image%2020250215185836.png)    
 I guess I'll lay off that for now and look at other things.
 
 `cmdline` returns interesting result:  rar file  
-![Pasted image 20250215192606.png](img/Pasted%20image%2020250215192606.png)  
+![Pasted image 20250215192606.png](Pasted%20image%2020250215192606.png)  
 
 `filescan` and findstr to get the rar file offsets:
-![Pasted image 20250215192803.png](img/Pasted%20image%2020250215192803.png)  
+![Pasted image 20250215192803.png](Pasted%20image%2020250215192803.png)  
 After extracting all 3, it seems they're the same.
 
 #### The rar file
@@ -60,7 +60,7 @@ HomeGroupUser$:1002:aad3b435b51404eeaad3b435b51404ee:f0fc3d257814e08fea06e63c576
 Alissa Simpson:1003:aad3b435b51404eeaad3b435b51404ee:f4ff64c8baac57d22f22edc681055ba6:::
 ```
 Enter the NTLM hash and we get flag  
-![500](img/Pasted%20image%2020250215192402.png)  
+![500](Pasted%20image%2020250215192402.png)  
 
 `flag{w3ll_3rd_stag_was_easy}`
 
@@ -69,7 +69,7 @@ Part 1, 2 not solved yet.
 ##### Continuing with part 1, 2 after a day:  
 
 I was trying out some commands, `consoles` gave me this peculiar base64 string:  
-![Pasted image 20250216210104.png](img/Pasted%20image%2020250216210104.png)  
+![Pasted image 20250216210104.png](Pasted%20image%2020250216210104.png)  
 
 Putting in cyberchef returned the flag.
 
@@ -77,11 +77,11 @@ Putting in cyberchef returned the flag.
 
 Now we just need to find the second stage flag. The only clue left is that mspaint process.  
 After a while found something interesting:  
-![600](img/Pasted%20image%2020250216213108.png)  
-![600](img/Pasted%20image%2020250216214002.png)  
-0_0:  ![Pasted image 20250216214300.png](img/Pasted%20image%2020250216214300.png)
+![600](Pasted%20image%2020250216213108.png)  
+![600](Pasted%20image%2020250216214002.png)  
+0_0:  ![Pasted image 20250216214300.png](Pasted%20image%2020250216214300.png)
 After messing with it for a while I got the flag:  
-![Pasted image 20250216214735.png](img/Pasted%20image%2020250216214735.png)  
+![Pasted image 20250216214735.png](Pasted%20image%2020250216214735.png)  
 `flag{g00d_boy_good_girl}` I coudn't submit this flag for whatever reason
 
 ## 3.1 Bầu Trời Mới - Da LAB ft. Minh Tốc
@@ -149,8 +149,8 @@ Theres more but I don't think those will help
 
 I will do all the basics again to see if I missed anything.  
 Ok so doing `envars` on notepad process gave this string that looked off:  
-![Pasted image 20250216222626.png](img/Pasted%20image%2020250216222626.png)  
+![Pasted image 20250216222626.png](Pasted%20image%2020250216222626.png)  
 I tested it for base64 encoding and this is what returned:  
-![Pasted image 20250216222732.png](img/Pasted%20image%2020250216222732.png)  
+![Pasted image 20250216222732.png](Pasted%20image%2020250216222732.png)  
 
 `flag{w3lc0m3_T0_$T4g3_!_Of_L4B_2}`

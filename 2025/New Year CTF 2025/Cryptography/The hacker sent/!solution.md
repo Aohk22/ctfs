@@ -2,7 +2,7 @@ CT: ¥☐ü_ç☐_☐∏_∲Λ┏_Λ_₪Λ¥_Λ⊥_↻┏¥þ⊥☐
 
 Putting this in Dcode identify shows that this is l33t speak  
 
-[Pasted image 20250113161429.png](images/Pasted%20image%2020250113161429.png)
+![Pasted image 20250113161429.png](images/Pasted%20image%2020250113161429.png)
 
 Returns: "YOU_CO_ON_FAR_A_NAY_AT_CRYPTO", which looks promising (putting as flag didn't work)
 
