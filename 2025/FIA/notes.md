@@ -122,10 +122,10 @@ Command line : "C:\Program Files (x86)\KeePass Password Safe 2\KeePass.exe" "C:\
 notepad.exe pid:   3260
 Command line : "C:\Windows\system32\NOTEPAD.EXE" C:\Users\SmartNet\Secrets\Hidden.kdbx
 ```  
-There was a notepad process that accessed `Hidden.kdbx` to do something, might be do add extra data so that I can't run the scripts. The challenge might be reverting these changes?  
+There was a notepad process that accessed `Hidden.kdbx`, might be to add extra data so that I can't run the scripts. The challenge might be reverting these changes?  
 
 Ran all the scripts I found on github but still no luck.  
-All scripts names: BruteForce-to-KeePass, keepass-dump-masterkey, keepass-password-dumper.  PoshKPBrute.  
+All scripts names: BruteForce-to-KeePass, keepass-dump-masterkey, keepass-password-dumper, PoshKPBrute.  
 
 ### Browser
 
