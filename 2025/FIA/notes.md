@@ -1,5 +1,7 @@
 # Memory Forensics
 
+*First time doing forensics, forget my misconceptions*
+
 ## #1 Nhà bảo vệ môi trường
 
 Used volatility 2.6 to solve.  
