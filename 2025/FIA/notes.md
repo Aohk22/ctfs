@@ -1,6 +1,6 @@
 # Memory Forensics
 
-*First time raw memory forensics, forget my misconceptions*
+*First time raw memory forensics, forgive my misconceptions*
 
 ## #1 Nhà bảo vệ môi trường
 
